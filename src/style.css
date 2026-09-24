@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #eef2f7;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 48px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: min(900px, 100%);
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 18px 55px rgba(22, 34, 55, 0.12);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: #667085;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.1;
+}
+
+.subtitle {
+  color: #667085;
+  margin: 10px 0 0;
+}
+
+.counter {
+  min-width: 100px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f1f5f9;
+  text-align: center;
+}
+
+.counter strong {
+  display: block;
+  font-size: 30px;
+}
+
+.counter span {
+  color: #667085;
+  font-size: 13px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.task-form input {
+  flex: 1;
+  border: 1px solid #d7dde7;
+  border-radius: 12px;
+  padding: 14px 16px;
+  outline: none;
+}
+
+.task-form input:focus,
+.edit-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+.task-form button {
+  border: 0;
+  border-radius: 12px;
+  padding: 0 20px;
+  font-weight: 700;
+  background: #172033;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.filters button {
+  border: 1px solid #d7dde7;
+  background: white;
+  border-radius: 10px;
+  padding: 8px 14px;
+  color: #475467;
+}
+
+.filters button.active {
+  background: #172033;
+  color: white;
+  border-color: #172033;
+}
+
+.task-list {
+  display: grid;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e4e8ef;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.task-item.done {
+  background: #f8fafc;
+}
+
+.task-item.done .task-title {
+  text-decoration: line-through;
+  color: #98a2b3;
+}
+
+.check {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #cbd5e1;
+  border-radius: 50%;
+  background: white;
+  flex: 0 0 auto;
+  font-weight: 800;
+}
+
+.done .check {
+  background: #172033;
+  border-color: #172033;
+  color: white;
+}
+
+.task-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.task-title {
+  word-break: break-word;
+}
+
+.edit-input {
+  width: 100%;
+  border: 1px solid #d7dde7;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.action {
+  border: 1px solid #d7dde7;
+  background: white;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 13px;
+}
+
+.action.danger {
+  color: #b42318;
+}
+
+.action.save {
+  background: #172033;
+  color: white;
+  border-color: #172033;
+}
+
+.empty {
+  text-align: center;
+  padding: 44px 20px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+}
+
+.empty-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  font-weight: 800;
+}
+
+.empty h2 {
+  margin: 0 0 6px;
+}
+
+.empty p {
+  margin: 0;
+  color: #667085;
+}
+
+.footer {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid #eef1f5;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  color: #98a2b3;
+  font-size: 12px;
+}
+
+@media (max-width: 650px) {
+  .app {
+    padding: 20px 12px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+
+  .counter {
+    min-width: 78px;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form button {
+    height: 46px;
+  }
+
+  .task-item {
+    align-items: flex-start;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
