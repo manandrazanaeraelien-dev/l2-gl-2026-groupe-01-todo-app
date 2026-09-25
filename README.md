@@ -150,3 +150,26 @@ git push -u origin main
 ```
 
 Inviter ensuite les membres du groupe et le compte demandé par l'enseignant comme collaborateurs.
+## 🚀 Installation et exécution du projet
+
+Pour exécuter ce projet localement sur votre machine :
+
+1. Cloner le dépôt :
+```bash
+git clone https://github.com/manandrazanaeraelien-dev/l2-gl-2026-groupe-01-todo-app.git
+```
+
+2. Accéder au dossier du projet :
+```bash
+cd l2-gl-2026-groupe-01-todo-app
+```
+
+3. Installer les dépendances :
+```bash
+npm install
+```
+
+4. Lancer le serveur de développement :
+```bash
+npm run dev
+```
