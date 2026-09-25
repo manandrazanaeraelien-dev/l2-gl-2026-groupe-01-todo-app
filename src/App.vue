@@ -310,6 +310,7 @@ function changeFilter(filter) {
 const filteredTasks = computed(() => {
   let result = tasks.value
 
+  // Recherche
   if (searchQuery.value.trim()) {
     const search = searchQuery.value.toLowerCase().trim()
 
@@ -318,11 +319,12 @@ const filteredTasks = computed(() => {
     )
   }
 
-  if (currentFilter.value === 'todo') {
+  // Filtre
+  if (currentFilter.value === 'active') {
     result = result.filter(task => !task.completed)
   }
 
-  if (currentFilter.value === 'done') {
+  if (currentFilter.value === 'completed') {
     result = result.filter(task => task.completed)
   }
 
