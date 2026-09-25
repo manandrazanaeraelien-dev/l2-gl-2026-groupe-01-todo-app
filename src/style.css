@@ -261,6 +261,20 @@ select:focus-visible {
   background: white;
   color: #172033;
 }
+.task-form .priority-select {
+  flex: 0 0 150px;
+  border: 1px solid #d7dde7;
+  border-radius: 12px;
+  padding: 0 12px;
+  outline: none;
+  background: white;
+  color: #172033;
+}
+
+.task-form .priority-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
 
 .task-form input:focus {
   border-color: #667eea;
