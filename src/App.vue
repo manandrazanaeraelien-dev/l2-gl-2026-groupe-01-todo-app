@@ -2,6 +2,7 @@
 import { ref, computed, watch } from 'vue'
 import TaskForm from './components/TaskForm.vue'
 import FilterBar from './components/FilterBar.vue'
+import Presentation from './components/Presentation.vue'
 
 /* =========================
    MODE CLAIR / SOMBRE
@@ -15,6 +16,12 @@ function toggleDarkMode() {
   isDarkMode.value = !isDarkMode.value
   localStorage.setItem('darkMode', isDarkMode.value)
 }
+
+/* =========================
+   PRESENTATION DU PROJET
+========================= */
+
+const showPresentation = ref(false)
 
 /* =========================
    TACHES
@@ -310,7 +317,6 @@ function changeFilter(filter) {
 const filteredTasks = computed(() => {
   let result = tasks.value
 
-  // Recherche
   if (searchQuery.value.trim()) {
     const search = searchQuery.value.toLowerCase().trim()
 
@@ -319,7 +325,6 @@ const filteredTasks = computed(() => {
     )
   }
 
-  // Filtre
   if (currentFilter.value === 'active') {
     result = result.filter(task => !task.completed)
   }
@@ -330,6 +335,7 @@ const filteredTasks = computed(() => {
 
   return result
 })
+
 /* =========================
    STATISTIQUES
 ========================= */
@@ -412,6 +418,22 @@ watch(
     class="app"
     :class="{ 'dark-mode': isDarkMode }"
   >
+
+    <!-- =========================
+         BOUTON PRESENTATION
+    ========================== -->
+
+    <div class="presentation-button-container">
+
+      <button
+        class="presentation-button"
+        @click="showPresentation = true"
+      >
+        📚 Présentation du projet
+      </button>
+
+    </div>
+
 
     <!-- =========================
          HEADER
@@ -629,11 +651,13 @@ watch(
     ========================== -->
 
     <section class="filter-section">
-  <FilterBar
-    :current-filter="currentFilter"
-    @change-filter="changeFilter"
-  />
-</section>
+
+      <FilterBar
+        :current-filter="currentFilter"
+        @change-filter="changeFilter"
+      />
+
+    </section>
 
 
     <!-- =========================
@@ -839,9 +863,7 @@ watch(
 
             <button
               class="delete-button"
-              @click="
-                deleteTask(task.id)
-              "
+              @click="deleteTask(task.id)"
             >
               🗑️ Supprimer
             </button>
@@ -870,6 +892,16 @@ watch(
       </p>
 
     </footer>
+
+
+    <!-- =========================
+         PRESENTATION
+    ========================== -->
+
+    <Presentation
+      v-if="showPresentation"
+      @close="showPresentation = false"
+    />
 
   </div>
 

@@ -824,3 +824,187 @@ footer {
     font-size: 26px;
   }
 }
+/* =========================================
+   BOUTON PRÉSENTATION
+========================================= */
+
+.presentation-button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #4f46e5;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.presentation-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* =========================================
+   PAGE PRÉSENTATION
+========================================= */
+
+.presentation-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
+}
+
+.presentation-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.presentation-header h1 {
+  margin: 20px 0 10px;
+  font-size: 32px;
+}
+
+.presentation-header p {
+  font-size: 17px;
+  opacity: 0.8;
+}
+
+.back-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Cartes */
+
+.presentation-card {
+  margin-bottom: 22px;
+  padding: 25px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.presentation-card h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+
+.presentation-card p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.presentation-card ul {
+  padding-left: 25px;
+}
+
+.presentation-card li {
+  margin: 10px 0;
+}
+
+/* Concepts */
+
+.concept {
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.concept strong {
+  font-size: 17px;
+}
+
+/* Structure */
+
+.presentation-card pre {
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+  background: #f4f4f4;
+  font-family: Consolas, monospace;
+}
+
+/* Membres */
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.member {
+  padding: 18px;
+  border-radius: 12px;
+  background: #f5f5f5;
+}
+
+.member span {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.member strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.member p {
+  margin: 0;
+}
+
+/* GitHub */
+
+.github-card {
+  text-align: center;
+}
+
+.github-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Dark mode */
+
+.dark-mode .presentation-card {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.dark-mode .concept,
+.dark-mode .member,
+.dark-mode .presentation-card pre {
+  background: #0f172a;
+}
+
+.dark-mode .presentation-header p {
+  color: #cbd5e1;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .members {
+    grid-template-columns: 1fr;
+  }
+
+  .presentation-header h1 {
+    font-size: 25px;
+  }
+
+  .presentation-card {
+    padding: 18px;
+  }
+}
