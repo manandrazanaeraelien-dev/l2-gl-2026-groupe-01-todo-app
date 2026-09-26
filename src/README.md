@@ -8,6 +8,14 @@ Ce projet est une application **To-Do List** permettant à l'utilisateur de cré
 
 L'application possède une interface simple, moderne et responsive.
 
+## 🌐 Application en ligne
+
+L'application est disponible en ligne via GitHub Pages :
+
+👉 **[Accéder à l'application](https://manandrazanaeraelien-dev.github.io/l2-gl-2026-groupe-01-todo-app/)**
+
+Vous pouvez tester directement le gestionnaire de tâches en ligne.
+
 ## 🚀 Technologies utilisées
 
 - Vue.js 3
