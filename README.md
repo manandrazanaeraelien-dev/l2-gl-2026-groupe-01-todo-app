@@ -134,5 +134,35 @@ vue3-todo-mini-project/
 ├── package.json
 ├── vite.config.js
 └── README.md
+# 📸 19. Captures d'écran
 
+<p align="center">
+  <img src="Interface%20principale.png" width="45%" alt="Interface principale" />
+  <img src="Interface%20en%20mode%20sombre.png" width="45%" alt="Interface mode sombre" />
+</p>
+
+<p align="center">
+  <img src="Ajout%20d’une%20tâche.png" width="45%" alt="Ajout d'une tâche" />
+  <img src="Confirmation%20de%20suppression%20des%20tâches%20terminées.png" width="45%" alt="Confirmation suppression" />
+</p>
+
+<p align="center">
+  <img src="Gestion%20des%20tâche.png" width="45%" alt="Gestion des tâches 1" />
+  <img src="Gestion%20des%20tâches.png" width="45%" alt="Gestion des tâches 2" />
+</p>
+
+<p align="center">
+  <img src="Recherche%20et%20filtrage%20des%20tâche.png" width="45%" alt="Recherche et filtrage" />
+  <img src="Filtre%20des%20tâches%20terminées.png" width="45%" alt="Filtre tâches terminées" />
+</p>
+
+<p align="center">
+  <img src="Filtrage%20des%20tâches%20à%20faire.png" width="45%" alt="Filtrage à faire" />
+  <img src="Affichage%20des%20tâches%20terminées.png" width="45%" alt="Affichage terminées" />
+</p>
+
+<p align="center">
+  <img src="Statistiques%20et%20progression%20des%20tâches.png" width="45%" alt="Statistiques" />
+  <img src="Retour%20à%20l’état%20initial%20des%20tâches.png" width="45%" alt="Retour état initial" />
+</p>
 
