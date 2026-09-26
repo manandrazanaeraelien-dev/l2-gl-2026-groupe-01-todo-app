@@ -266,7 +266,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## 🖥️ Capture 1 — Interface principale
 
 <p align="center">
-  <img src="./Capture-1.png" width="80%" alt="Capture 1 - Interface principale">
+  <img src="./Capture1.png" width="80%" alt="Capture 1 - Interface principale">
 </p>
 
 ---
@@ -274,7 +274,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## 🌙 Capture 2 — Interface en mode sombre
 
 <p align="center">
-  <img src="./Capture-2.png" width="80%" alt="Capture 2 - Mode sombre">
+  <img src="./Capture2.png" width="80%" alt="Capture 2 - Mode sombre">
 </p>
 
 ---
@@ -282,7 +282,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## ➕ Capture 3 — Ajout d'une tâche
 
 <p align="center">
-  <img src="./Capture-3.png" width="80%" alt="Capture 3 - Ajout d'une tâche">
+  <img src="./Capture3.png" width="80%" alt="Capture 3 - Ajout d'une tâche">
 </p>
 
 ---
@@ -290,7 +290,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## 🗑️ Capture 4 — Confirmation de suppression
 
 <p align="center">
-  <img src="./Capture-4.png" width="80%" alt="Capture 4 - Confirmation de suppression">
+  <img src="./Capture4.png" width="80%" alt="Capture 4 - Confirmation de suppression">
 </p>
 
 ---
@@ -298,7 +298,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## 📋 Capture 5 — Gestion des tâches
 
 <p align="center">
-  <img src="./Capture-5.png" width="80%" alt="Capture 5 - Gestion des tâches">
+  <img src="./Capture5.png" width="80%" alt="Capture 5 - Gestion des tâches">
 </p>
 
 ---
@@ -306,7 +306,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## ✏️ Capture 6 — Modification et gestion des tâches
 
 <p align="center">
-  <img src="./Capture-6.png" width="80%" alt="Capture 6 - Modification des tâches">
+  <img src="./Capture6.png" width="80%" alt="Capture 6 - Modification des tâches">
 </p>
 
 ---
@@ -314,7 +314,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## 🔎 Capture 7 — Recherche et filtrage des tâches
 
 <p align="center">
-  <img src="./Capture-7.png" width="80%" alt="Capture 7 - Recherche et filtrage">
+  <img src="./Capture7.png" width="80%" alt="Capture 7 - Recherche et filtrage">
 </p>
 
 ---
@@ -322,7 +322,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## 🔽 Capture 8 — Filtre des tâches terminées
 
 <p align="center">
-  <img src="./Capture-8.png" width="80%" alt="Capture 8 - Filtre des tâches terminées">
+  <img src="./Capture8.png" width="80%" alt="Capture 8 - Filtre des tâches terminées">
 </p>
 
 ---
@@ -330,7 +330,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## ⏳ Capture 9 — Filtrage des tâches à faire
 
 <p align="center">
-  <img src="./Capture-9.png" width="80%" alt="Capture 9 - Filtrage des tâches à faire">
+  <img src="./Capture9.png" width="80%" alt="Capture 9 - Filtrage des tâches à faire">
 </p>
 
 ---
@@ -338,7 +338,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## ✅ Capture 10 — Affichage des tâches terminées
 
 <p align="center">
-  <img src="./Capture-10.png" width="80%" alt="Capture 10 - Tâches terminées">
+  <img src="./Capture10.png" width="80%" alt="Capture 10 - Tâches terminées">
 </p>
 
 ---
@@ -346,7 +346,7 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## 📊 Capture 11 — Statistiques et progression
 
 <p align="center">
-  <img src="./Capture-11.png" width="80%" alt="Capture 11 - Statistiques et progression">
+  <img src="./Capture11.png" width="80%" alt="Capture 11 - Statistiques et progression">
 </p>
 
 ---
@@ -354,17 +354,16 @@ Cette section présente les différentes interfaces et fonctionnalités de l'app
 ## 🔄 Capture 12 — Retour à l'état initial des tâches
 
 <p align="center">
-  <img src="./Capture-12.png" width="80%" alt="Capture 12 - Retour à l'état initial">
+  <img src="./Capture12.png" width="80%" alt="Capture 12 - Retour à l'état initial">
 </p>
 
 ---
 
-## 📝 Capture 13 — Interface de gestion des tâches
+## 📝 Capture 13 — Gestion des tâches
 
 <p align="center">
-  <img src="./Capture-13.png" width="80%" alt="Capture 13 - Gestion des tâches">
+  <img src="./Capture13.png" width="80%" alt="Capture 13 - Gestion des tâches">
 </p>
-
 ---
 
 ## 9. 💾 Stockage des données avec LocalStorage
