@@ -226,21 +226,6 @@ const emit = defineEmits(['change-filter'])
 ```text
 vue3-todo-mini-project/
 │
-├── public/
-│   └── captures/
-│       ├── interface-principale.png
-│       ├── mode-sombre.png
-│       ├── ajout-tache.png
-│       ├── confirmation-suppression.png
-│       ├── gestion-taches-1.png
-│       ├── gestion-taches-2.png
-│       ├── recherche-filtrage.png
-│       ├── filtre-terminees.png
-│       ├── filtre-a-faire.png
-│       ├── affichage-terminees.png
-│       ├── statistiques-progression.png
-│       └── retour-etat-initial.png
-│
 ├── src/
 │   ├── components/
 │   │   ├── TaskForm.vue
@@ -251,6 +236,22 @@ vue3-todo-mini-project/
 │   ├── App.vue
 │   └── main.js
 │
+├── public/
+│
+├── Capture-1.png
+├── Capture-2.png
+├── Capture-3.png
+├── Capture-4.png
+├── Capture-5.png
+├── Capture-6.png
+├── Capture-7.png
+├── Capture-8.png
+├── Capture-9.png
+├── Capture-10.png
+├── Capture-11.png
+├── Capture-12.png
+├── Capture-13.png
+│
 ├── package.json
 ├── vite.config.js
 └── README.md
@@ -258,103 +259,115 @@ vue3-todo-mini-project/
 
 ---
 
-# 📸 8. Captures d'écran
+# 8. 📸 Captures d'écran
 
-Les captures suivantes présentent les principales fonctionnalités de l'application.
+Cette section présente les différentes interfaces et fonctionnalités de l'application.
 
-## 🖥️ Interface principale
+## 🖥️ Capture 1 — Interface principale
 
 <p align="center">
-  <img src="public/captures/interface-principale.png" width="80%" alt="Interface principale">
+  <img src="./Capture-1.png" width="80%" alt="Capture 1 - Interface principale">
 </p>
 
 ---
 
-## 🌙 Interface en mode sombre
+## 🌙 Capture 2 — Interface en mode sombre
 
 <p align="center">
-  <img src="public/captures/mode-sombre.png" width="80%" alt="Interface en mode sombre">
+  <img src="./Capture-2.png" width="80%" alt="Capture 2 - Mode sombre">
 </p>
 
 ---
 
-## ➕ Ajout d'une tâche
+## ➕ Capture 3 — Ajout d'une tâche
 
 <p align="center">
-  <img src="public/captures/ajout-tache.png" width="80%" alt="Ajout d'une tâche">
+  <img src="./Capture-3.png" width="80%" alt="Capture 3 - Ajout d'une tâche">
 </p>
 
 ---
 
-## 🗑️ Confirmation de suppression
+## 🗑️ Capture 4 — Confirmation de suppression
 
 <p align="center">
-  <img src="public/captures/confirmation-suppression.png" width="80%" alt="Confirmation de suppression">
+  <img src="./Capture-4.png" width="80%" alt="Capture 4 - Confirmation de suppression">
 </p>
 
 ---
 
-## 📋 Gestion des tâches
+## 📋 Capture 5 — Gestion des tâches
 
 <p align="center">
-  <img src="public/captures/gestion-taches-1.png" width="80%" alt="Gestion des tâches">
-</p>
-
-<p align="center">
-  <img src="public/captures/gestion-taches-2.png" width="80%" alt="Gestion des tâches">
+  <img src="./Capture-5.png" width="80%" alt="Capture 5 - Gestion des tâches">
 </p>
 
 ---
 
-## 🔎 Recherche et filtrage des tâches
+## ✏️ Capture 6 — Modification et gestion des tâches
 
 <p align="center">
-  <img src="public/captures/recherche-filtrage.png" width="80%" alt="Recherche et filtrage des tâches">
+  <img src="./Capture-6.png" width="80%" alt="Capture 6 - Modification des tâches">
 </p>
 
 ---
 
-## 🔽 Filtre des tâches terminées
+## 🔎 Capture 7 — Recherche et filtrage des tâches
 
 <p align="center">
-  <img src="public/captures/filtre-terminees.png" width="80%" alt="Filtre des tâches terminées">
+  <img src="./Capture-7.png" width="80%" alt="Capture 7 - Recherche et filtrage">
 </p>
 
 ---
 
-## ⏳ Filtrage des tâches à faire
+## 🔽 Capture 8 — Filtre des tâches terminées
 
 <p align="center">
-  <img src="public/captures/filtre-a-faire.png" width="80%" alt="Filtrage des tâches à faire">
+  <img src="./Capture-8.png" width="80%" alt="Capture 8 - Filtre des tâches terminées">
 </p>
 
 ---
 
-## ✅ Affichage des tâches terminées
+## ⏳ Capture 9 — Filtrage des tâches à faire
 
 <p align="center">
-  <img src="public/captures/affichage-terminees.png" width="80%" alt="Affichage des tâches terminées">
+  <img src="./Capture-9.png" width="80%" alt="Capture 9 - Filtrage des tâches à faire">
 </p>
 
 ---
 
-## 📊 Statistiques et progression
+## ✅ Capture 10 — Affichage des tâches terminées
 
 <p align="center">
-  <img src="public/captures/statistiques-progression.png" width="80%" alt="Statistiques et progression des tâches">
+  <img src="./Capture-10.png" width="80%" alt="Capture 10 - Tâches terminées">
 </p>
 
 ---
 
-## 🔄 Retour à l'état initial des tâches
+## 📊 Capture 11 — Statistiques et progression
 
 <p align="center">
-  <img src="public/captures/retour-etat-initial.png" width="80%" alt="Retour à l'état initial des tâches">
+  <img src="./Capture-11.png" width="80%" alt="Capture 11 - Statistiques et progression">
 </p>
 
 ---
 
-## 9. Stockage des données
+## 🔄 Capture 12 — Retour à l'état initial des tâches
+
+<p align="center">
+  <img src="./Capture-12.png" width="80%" alt="Capture 12 - Retour à l'état initial">
+</p>
+
+---
+
+## 📝 Capture 13 — Interface de gestion des tâches
+
+<p align="center">
+  <img src="./Capture-13.png" width="80%" alt="Capture 13 - Gestion des tâches">
+</p>
+
+---
+
+## 9. 💾 Stockage des données avec LocalStorage
 
 L'application utilise **localStorage** pour conserver les tâches dans le navigateur.
 
@@ -375,11 +388,13 @@ Pour récupérer les données :
 const savedTasks = localStorage.getItem('tasks')
 ```
 
+Le mode sombre et les tâches supprimées peuvent également être conservés dans `localStorage`.
+
 ---
 
-## 10. Interface utilisateur
+## 10. 🎨 Interface utilisateur
 
-L'interface a été conçue pour être simple et facile à utiliser.
+L'interface a été conçue pour être simple, claire et facile à utiliser.
 
 Elle contient notamment :
 
@@ -388,31 +403,34 @@ Elle contient notamment :
 - Des statistiques
 - Une barre de progression
 - Un formulaire d'ajout
-- Une recherche
+- Une barre de recherche
 - Des filtres
 - Des boutons d'actions
 - Une liste des tâches
+- Des notifications d'information
 
 ---
 
-## 11. Gestion des priorités
+## 11. ⭐ Gestion des priorités
 
-Chaque tâche possède une priorité :
+Chaque tâche possède une priorité.
+
+Les trois niveaux disponibles sont :
 
 - 🔴 **Haute**
 - 🟠 **Moyenne**
 - 🟢 **Basse**
 
-La priorité peut être choisie lors de l'ajout ou modifiée ensuite.
+La priorité peut être choisie lors de l'ajout d'une tâche et peut également être modifiée.
 
 ---
 
-## 12. Mode sombre et mode clair
+## 12. 🌙 Mode sombre et mode clair
 
-L'application possède deux thèmes :
+L'application possède deux modes d'affichage :
 
-- ☀️ Mode clair
-- 🌙 Mode sombre
+- ☀️ **Mode clair**
+- 🌙 **Mode sombre**
 
 Le choix du thème est sauvegardé dans `localStorage`.
 
@@ -420,64 +438,121 @@ Ainsi, le thème sélectionné peut être conservé après actualisation de la p
 
 ---
 
-## 13. Statistiques
+## 13. 📊 Statistiques et progression
 
-L'application affiche automatiquement :
+L'application affiche automatiquement plusieurs statistiques :
 
-- 📋 Le nombre total de tâches
-- ⏳ Le nombre de tâches à faire
-- ✅ Le nombre de tâches terminées
-- 📈 Le pourcentage de progression
+- 📋 Nombre total de tâches
+- ⏳ Nombre de tâches à faire
+- ✅ Nombre de tâches terminées
+- 📈 Pourcentage de progression
 
-Le pourcentage est calculé automatiquement à partir du nombre de tâches terminées.
+Le pourcentage de progression est calculé automatiquement à partir du nombre de tâches terminées.
 
 ---
 
-## 14. Installation du projet
+## 14. 🔎 Recherche et filtrage
 
-Cloner le projet :
+La barre de recherche permet de rechercher rapidement une tâche à partir de son titre.
+
+Les filtres permettent d'afficher :
+
+- **Toutes** : toutes les tâches
+- **À faire** : uniquement les tâches non terminées
+- **Terminées** : uniquement les tâches terminées
+
+La combinaison de la recherche et des filtres facilite l'organisation des tâches.
+
+---
+
+## 15. 🔄 Actions globales
+
+L'application propose également plusieurs actions globales :
+
+- **Tout terminer**
+- **Tout remettre à faire**
+- **Supprimer les tâches terminées**
+- **Annuler une suppression**
+
+Ces actions permettent de gérer rapidement plusieurs tâches.
+
+---
+
+## 16. 📱 Responsive Design
+
+L'interface a été conçue pour s'adapter à différentes tailles d'écran.
+
+Elle peut être utilisée sur :
+
+- 💻 Ordinateur
+- 📱 Téléphone
+- 📟 Tablette
+
+Le CSS permet d'adapter la disposition des éléments selon la largeur de l'écran.
+
+---
+
+## 17. 🚀 Installation du projet
+
+### Cloner le projet
 
 ```bash
 git clone https://github.com/votre-compte/vue3-todo-mini-project.git
 ```
 
-Entrer dans le projet :
+### Entrer dans le dossier
 
 ```bash
 cd vue3-todo-mini-project
 ```
 
-Installer les dépendances :
+### Installer les dépendances
 
 ```bash
 npm install
 ```
 
-Lancer le serveur de développement :
+### Lancer le serveur de développement
 
 ```bash
 npm run dev
 ```
 
-L'application est ensuite accessible dans le navigateur à l'adresse indiquée par Vite.
+Vite indique ensuite l'adresse locale permettant d'ouvrir l'application dans le navigateur.
 
 ---
 
-## 15. Git et GitHub
+## 18. 🔧 Commandes Git principales
 
-Le projet est versionné avec **Git** et peut être publié sur **GitHub**.
-
-Commandes principales :
+Ajouter les modifications :
 
 ```bash
 git add .
+```
+
+Créer un commit :
+
+```bash
 git commit -m "Finalisation du mini-projet Vue 3"
+```
+
+Envoyer les modifications vers GitHub :
+
+```bash
 git push
 ```
 
 ---
 
-## 16. Conclusion
+## 19. 🌐 Déploiement
+
+Le projet peut être déployé avec **GitHub Pages** afin de rendre l'application accessible en ligne.
+
+Le déploiement utilise une configuration adaptée à **Vite** et peut être automatisé avec **GitHub Actions**.
+
+---
+
+## 20. 🎓 Conclusion
 
 Ce mini-projet nous a permis de mettre en pratique les principales notions de **Vue.js 3** et de mieux comprendre le fonctionnement d'une application web moderne.
 
@@ -488,9 +563,11 @@ Nous avons notamment appris à :
 - Utiliser les directives Vue.js
 - Gérer les événements
 - Utiliser `props` et `emit`
-- Utiliser `ref`, `computed` et `watch`
+- Utiliser `ref()`, `computed()` et `watch()`
 - Sauvegarder des données avec `localStorage`
+- Créer une interface responsive
 - Organiser un projet avec Vue.js et Vite
 - Utiliser Git et GitHub
+- Déployer une application web
 
-Le projet constitue ainsi une application complète de gestion de tâches réalisée avec **Vue.js 3 + Vite**.
+Ce projet constitue ainsi une application complète de gestion de tâches réalisée avec **Vue.js 3 + Vite**.
