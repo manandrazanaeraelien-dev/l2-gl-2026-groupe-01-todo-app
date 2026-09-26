@@ -6,40 +6,76 @@ const membres = [
     nom: 'RAJAOSOLO Manandrazana Eraelien',
     role: 'Chef de projet / Lead Dev',
     discours: "Bonjour à tous. Je vais vous présenter la structure globale de notre mini-projet réalisé avec Vue.js 3 et Vite. Il s'agit d'une application de gestion de tâches (ToDo App). Pour ma part, j'ai géré l'architecture générale dans App.vue, la réactivité des données, la persistance automatique dans le localStorage, ainsi que la configuration du dépôt GitHub et l'invitation de notre collaborateur @GasyCoder.",
-    taches: [
-      'Introduction, présentation et technologies',
-      'Architecture globale (App.vue) & réactivité',
-      'Configuration GitHub & GitHub Pages (deploy.yml)'
+    etapes: [
+      {
+        titre: "Introduction, présentation et technologies",
+        details: "Présentation des objectifs du projet Todo App, du groupe L2 GL 01 et du choix de la stack moderne Vue 3 + Vite."
+      },
+      {
+        titre: "Architecture globale (App.vue) & réactivité",
+        details: "Mise en place de la structure racine App.vue, gestion de l'état réactif principal des tâches et persistance dynamique avec LocalStorage."
+      },
+      {
+        titre: "Configuration GitHub & GitHub Pages (deploy.yml)",
+        details: "Création du dépôt Git, invitation des collaborateurs et mise en place du déploiement automatisé via GitHub Actions."
+      }
     ]
   },
   {
     nom: 'RASOLOFOHARIFARA Marie Rosa',
     role: 'Développeuse Frontend',
     discours: "Bonjour. De mon côté, je me suis occupée de la création du composant TaskForm.vue pour l'ajout des nouvelles tâches. J'ai utilisé la directive v-model pour la liaison automatique des données et les événements emit pour transmettre la nouvelle tâche au composant parent. J'ai également participé à la mise en place de la barre de filtrage dans FilterBar.vue.",
-    taches: [
-      'Structure et fonctionnalités de base',
-      'Création du composant TaskForm.vue (v-model, emit)',
-      'Intégration de FilterBar.vue'
+    etapes: [
+      {
+        titre: "Structure et fonctionnalités de base",
+        details: "Définition de l'interface utilisateur initiale et structuration logique des composants du formulaire."
+      },
+      {
+        titre: "Création du composant TaskForm.vue (v-model, emit)",
+        details: "Implémentation de la saisie avec liaison bidirectionnelle v-model et émission d'événements @add-task vers le parent."
+      },
+      {
+        titre: "Intégration de FilterBar.vue",
+        details: "Conception du composant de navigation par filtres pour basculer facilement entre les vues de tâches."
+      }
     ]
   },
   {
     nom: 'RAKOTOARIMALALA Mitia Mendrika Hankasitrahina',
     role: 'Développeur Frontend & UI',
     discours: "Bonjour. J'ai pris en charge la création des composants TaskList.vue et TaskItem.vue pour l'affichage dynamique des tâches avec la directive v-for. J'ai aussi implémenté les fonctionnalités de modification, de suppression et d'archivage des tâches, tout en travaillant sur le style CSS pour offrir une interface claire et agréable.",
-    taches: [
-      'Fonctionnalités avancées et démonstration',
-      'Composants TaskList.vue et TaskItem.vue (v-for)',
-      'Édition, suppression de tâches et styles CSS'
+    etapes: [
+      {
+        titre: "Composants TaskList.vue et TaskItem.vue (v-for)",
+        details: "Rendu dynamique et performant de la liste des tâches avec la directive v-for et passage des props."
+      },
+      {
+        titre: "Édition, suppression de tâches et gestion du statut",
+        details: "Mise en place du mode modification en ligne, de la suppression individuelle et de la coche d'achèvement."
+      },
+      {
+        titre: "Conception graphique et styles CSS",
+        details: "Habillage CSS complet avec responsive design et intégration fluide du mode clair / sombre."
+      }
     ]
   },
   {
     nom: 'ANDRIAMAMPIHAJA Carmelo',
     role: 'Développeur Fullstack',
     discours: "Bonjour. Ma contribution a porté sur le développement du système de recherche en temps réel et le filtrage des tâches par statut (Toutes, À faire, Terminées). J'ai utilisé les propriétés calculées computed() pour calculer automatiquement le pourcentage de progression et les statistiques. J'ai également effectué les tests d'utilisation pour vérifier la persistance dans le localStorage.",
-    taches: [
-      'Vue.js, LocalStorage, GitHub Pages et conclusion',
-      'Recherche en temps réel et filtrage par statut',
-      'Calcul des statistiques et progression (computed)'
+    etapes: [
+      {
+        titre: "Recherche en temps réel et filtrage par statut",
+        details: "Création de la barre de recherche textuelle dynamique filtrant les tâches instantanément à la saisie."
+      },
+      {
+        titre: "Calcul des statistiques et progression (computed)",
+        details: "Utilisation des propriétés réactives computed() pour mettre à jour automatiquement la barre de progression et le compteur."
+      },
+      {
+        titre: "Tests, recette et vérification LocalStorage",
+        details: "Validation du comportement de l'application après rafraîchissement et vérification de la publication sur GitHub Pages."
+      }
     ]
   }
 ]
@@ -58,7 +94,7 @@ const membres = [
     <div class="container">
       <!-- Section Membres -->
       <section class="section">
-        <h2>👥 6. Membres du groupe et Discours Orale</h2>
+        <h2>👥 6. Membres du groupe</h2>
         
         <div class="members-grid">
           <div 
@@ -66,25 +102,32 @@ const membres = [
             :key="index" 
             class="member-card"
           >
+            <!-- Avatar -->
+            <div class="avatar">👨‍💻</div>
+
+            <!-- Nom et Role -->
             <div class="member-header">
-              <span class="avatar">👨‍💻</span>
-              <div>
-                <h3>{{ m.nom }}</h3>
-                <span class="badge">{{ m.role }}</span>
-              </div>
+              <h3>{{ m.nom }}</h3>
+              <span class="role-badge">{{ m.role }}</span>
             </div>
 
-            <!-- Explication / Discours orale -->
+            <!-- Discours oral -->
             <div class="speech-box">
-              <strong>🎙️ Explication orale :</strong>
-              <p><em>"{{ m.discours }}"</em></p>
+              <strong class="speech-title">🎙️ Explication orale :</strong>
+              <p class="speech-text">"{{ m.discours }}"</p>
             </div>
-            
-            <ul class="task-list">
-              <li v-for="(tache, i) in m.taches" :key="i">
-                {{ tache }}
-              </li>
-            </ul>
+
+            <!-- Etapes / Taches avec explications -->
+            <div class="etapes-container">
+              <div 
+                v-for="(etape, i) in m.etapes" 
+                :key="i" 
+                class="etape-item"
+              >
+                <div class="etape-title">- {{ etape.titre }}</div>
+                <div class="etape-details">{{ etape.details }}</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -110,7 +153,8 @@ const membres = [
   padding: 20px;
   max-width: 1100px;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
 }
 
 .presentation-header {
@@ -142,72 +186,84 @@ const membres = [
 }
 
 .member-card {
-  background: #f9fafb;
+  background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 18px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.member-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
 }
 
 .avatar {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 6px;
 }
 
 .member-header h3 {
   margin: 0;
-  font-size: 1.05rem;
-  color: #1f2937;
+  font-size: 1.1rem;
+  color: #111827;
+  font-weight: 700;
 }
 
-.badge {
+.role-badge {
   display: inline-block;
-  font-size: 0.75rem;
-  background: #e0e7ff;
-  color: #3730a3;
-  padding: 2px 8px;
-  border-radius: 12px;
-  margin-top: 4px;
+  font-size: 0.8rem;
+  color: #4f46e5;
+  font-weight: 600;
+  margin-top: 2px;
+  margin-bottom: 12px;
 }
 
 .speech-box {
-  background: #ffffff;
+  background: #f8fafc;
   border-left: 4px solid #6366f1;
-  padding: 10px;
+  padding: 12px;
   border-radius: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.speech-title {
+  display: block;
   font-size: 0.88rem;
-  color: #374151;
-}
-
-.speech-box strong {
-  color: #4f46e5;
-}
-
-.speech-box p {
-  margin: 5px 0 0 0;
-  line-height: 1.4;
-}
-
-.task-list {
-  margin: 0;
-  padding-left: 20px;
-  color: #4b5563;
-  font-size: 0.88rem;
-  line-height: 1.5;
-}
-
-.task-list li {
+  color: #312e81;
   margin-bottom: 4px;
+}
+
+.speech-text {
+  margin: 0;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #334155;
+  line-height: 1.45;
+}
+
+.etapes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.etape-item {
+  background: #f9fafb;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #f3f4f6;
+}
+
+.etape-title {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #1f2937;
+  margin-bottom: 2px;
+}
+
+.etape-details {
+  font-size: 0.82rem;
+  color: #6b7280;
+  line-height: 1.35;
+  padding-left: 10px;
 }
 
 .online-app {
